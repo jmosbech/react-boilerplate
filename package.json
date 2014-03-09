@@ -1,0 +1,29 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build-js": "browserify -t reactify -t envify browser/app.jsx | uglifyjs --mangle --compress > static/bundle.js",
+    "build-css": "node-sass --output-style compressed browser/css/style.scss static/bundle.css",
+    "build": "npm run build-js && npm run build-css",
+    "watch-js": "watchify -t reactify browser/app.jsx --outfile static/bundle.js --debug",
+    "watch": "nodemon bin/watch.js"
+  },
+  "dependencies": {
+    "express": "3.5.0",
+    "ejs": "~0.8.5",
+    "envify": "~1.2.1",
+    "react": "~0.9.0",
+    "browserify": "~3.32.0",
+    "uglify-js": "~2.4.12",
+    "reactify": "~0.9.1",
+    "node-sass": "~0.8.1"
+  },
+  "devDependencies": {
+    "watchify": "~0.6.1",
+    "nodemon": "~1.0.15",
+    "miniwatch": "~0.1.1"
+  }
+}
