@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 .idea
 static/bundle*
+static/build-info.json

@@ -7,7 +7,7 @@
     "start": "node app.js",
     "build-js": "browserify -t reactify -t envify browser/app.jsx | uglifyjs --mangle --compress > static/bundle.js",
     "build-css": "node-sass --output-style compressed browser/css/style.scss static/bundle.css",
-    "build": "npm run build-js && npm run build-css",
+    "build": "npm run build-js && npm run build-css && node ./bin/build-info.js",
     "watch-js": "watchify -t reactify browser/app.jsx --outfile static/bundle.js --debug",
     "watch": "nodemon bin/watch.js"
   },

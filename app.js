@@ -5,10 +5,17 @@ var path = require('path');
 
 var app = express();
 
-// all environments
+var build;
+try {
+	build = require('./static/build-info.json');
+} catch (err) {
+	build = { revision: new Date().toISOString() };
+}
+app.set('build', build);
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+app.disable('x-powered-by');
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
@@ -18,11 +25,11 @@ app.use(express.static(path.join(__dirname, 'static')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
 
 app.get('/', routes.index);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), function () {
+	console.log('Express server listening on port ' + app.get('port'));
 });

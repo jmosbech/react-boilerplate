@@ -1,33 +1,18 @@
 // windows doesn't support running tasks in parallel using the & operator
 // let's just fake it like this
 
-var fs = require('fs');
-var miniwatch = require('miniwatch');
-var sass = require('node-sass');
 var exec = require('child_process').exec;
 
+// build info
+require('./build-info.js');
+
 // js
-exec('npm run watch-js').stderr.pipe(process.stderr);
+var js = exec('npm run watch-js');
+js.stderr.pipe(process.stderr);
+js.stdout.pipe(process.stdout);
 
 // css
-buildSass();
-miniwatch('browser/css', function(err, files) {
-	if (err) {
-		throw err;
-	}
-	buildSass();
-});
+require('./watch-css.js');
 
 // start app
 require('../app.js');
-
-function buildSass(){
-	var start = new Date();
-	var css = sass.renderSync({
-		file: 'browser/css/style.scss',
-		imagePath: '/img',
-		sourceComments: 'map'
-	});
-	fs.writeFile('static/bundle.css', css);
-	console.log('rebuilt css in ' + (new Date() - start) + ' ms');
-}
