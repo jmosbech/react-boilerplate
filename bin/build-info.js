@@ -11,5 +11,5 @@ exec('git describe 2> /dev/null || git rev-parse HEAD', function (err, stdout) {
 		revision: stdout.trim()
 	};
 
-	fs.writeFileSync(path.join(__dirname, '../static', 'build-info.json'), JSON.stringify(info));
+	fs.writeFileSync(path.join(__dirname, '../static/build', 'build-info.json'), JSON.stringify(info));
 });

@@ -1,7 +1,7 @@
 # react-boilerplate
 This repo contains the skeleton for a web app built with React, Node.js, Express, Browserify, and Sass.
 
-## Installation
+## Install
 
 1) Fetch from GitHub into cwd:
 ```

@@ -7,7 +7,7 @@ var app = express();
 
 var build;
 try {
-	build = require('./static/build-info.json');
+	build = require('./static/build/build-info.json');
 } catch (err) {
 	build = { revision: new Date().toISOString() };
 }

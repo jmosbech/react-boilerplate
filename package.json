@@ -6,10 +6,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build-js": "browserify -t reactify -t envify browser/app.jsx | uglifyjs --mangle --compress > static/bundle.js",
-    "build-css": "node-sass --output-style compressed browser/css/style.scss static/bundle.css",
+    "build-js": "browserify -t reactify -t envify browser/app.jsx | uglifyjs --mangle --compress > static/build/bundle.js",
     "build": "npm run build-js && npm run build-css && node ./bin/build-info.js",
-    "watch-js": "watchify -t reactify browser/app.jsx --outfile static/bundle.js --debug",
+    "watch-js": "watchify -t reactify browser/app.jsx --outfile static/build/bundle.js --debug",
+    "build-css": "node-sass --source-map --output-style compressed --output static/build/bundle.css browser/css/style.scss",
     "watch": "nodemon bin/watch.js"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "browserify": "~3.32.0",
     "uglify-js": "~2.4.12",
     "reactify": "~0.9.1",
-    "node-sass": "~0.8.1"
+    "node-sass": "~0.8.3"
   },
   "devDependencies": {
     "watchify": "~0.6.1",
