@@ -2,8 +2,6 @@ var fs = require('fs');
 var miniwatch = require('miniwatch');
 var sass = require('node-sass');
 
-buildSass();
-
 miniwatch('browser/css', function (err, files) {
 	if (err) {
 		throw err;
