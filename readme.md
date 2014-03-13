@@ -1,6 +1,8 @@
 # react-boilerplate
 This repo contains the skeleton for a web app built with React, Node.js, Express, Browserify, and Sass.
 
+[![Dependency Status](https://david-dm.org/jmosbech/react-boilerplate.svg)](https://david-dm.org/jmosbech/react-boilerplate)
+
 ## Install
 
 1) Fetch from GitHub into cwd:
