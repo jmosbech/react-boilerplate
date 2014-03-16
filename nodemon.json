@@ -1,4 +1,4 @@
 {
 	"verbose": false,
-	"ignore": ["static", ".idea", "browser"]
+	"ignore": ["public", ".idea", "browser"]
 }

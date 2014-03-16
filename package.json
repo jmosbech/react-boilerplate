@@ -2,14 +2,14 @@
   "name": "react-boilerplate",
   "author": "Jonas Mosbech <jonas@mosbech.net>",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build-js": "browserify -t reactify -t envify browser/app.jsx | uglifyjs --mangle --compress > static/build/bundle.js",
+    "build-js": "browserify -t reactify -t envify browser/js/app.jsx | uglifyjs --mangle --compress > public/build/bundle.js",
     "build": "npm run build-js && npm run build-css && node ./bin/build-info.js",
-    "watch-js": "watchify -t reactify browser/app.jsx --outfile static/build/bundle.js --debug",
-    "build-css": "node-sass --source-map --output-style compressed --output static/build/bundle.css browser/css/style.scss",
+    "watch-js": "watchify -t reactify browser/js/app.jsx --outfile public/build/bundle.js --debug",
+    "build-css": "node-sass --source-map --output-style compressed --output public/build/bundle.css browser/css/style.scss",
     "watch": "nodemon bin/watch.js"
   },
   "dependencies": {
@@ -19,7 +19,7 @@
     "react": "~0.9.0",
     "browserify": "~3.32.0",
     "uglify-js": "~2.4.12",
-    "reactify": "~0.9.1",
+    "reactify": "~0.10.0",
     "node-sass": "~0.8.3"
   },
   "devDependencies": {

@@ -15,7 +15,7 @@ js.stdout.pipe(process.stdout);
 // css
 // don't use node-sass --watch - it kills the process on syntax errors
 miniwatch('browser/css', function(err, files){
-	var css = exec('node-sass --source-map --output static/build/bundle.css browser/css/style.scss');
+	var css = exec('node-sass --source-map --output public/build/bundle.css browser/css/style.scss');
 	css.stderr.pipe(process.stderr);
 	css.stdout.pipe(process.stdout);
 });

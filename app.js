@@ -7,7 +7,7 @@ var app = express();
 
 var build;
 try {
-	build = require('./static/build/build-info.json');
+	build = require('./public/build/build-info.json');
 } catch (err) {
 	build = { revision: new Date().toISOString() };
 }
@@ -21,10 +21,11 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'static')));
+
+// TODO: add error handler
 
 // development only
-if ('development' == app.get('env')) {
+if ('development' === app.get('env')) {
 	app.use(express.errorHandler());
 }
 
