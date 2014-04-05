@@ -5,13 +5,12 @@ var path = require('path');
 
 var app = express();
 
-var build;
 try {
-	build = require('./public/build/build-info.json');
+	app.locals.build = require('./public/build/build-info.json');
 } catch (err) {
-	build = { revision: new Date().toISOString() };
+	app.locals.build = { revision: new Date().toISOString() };
 }
-app.set('build', build);
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pejs');
