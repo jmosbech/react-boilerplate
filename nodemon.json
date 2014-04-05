@@ -1,5 +1,5 @@
 {
-	"ext": "js,css,pejs",
+	"ext": "js,css",
 	"verbose": false,
 	"ignore": ["public", "test"]
 }
