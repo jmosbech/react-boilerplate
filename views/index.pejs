@@ -1,0 +1,5 @@
+<%{ './layout.pejs' }%>
+
+<%{ content %>
+	<script src="/build/bundle.js?<%= build.revision %>"></script>
+<%} %>

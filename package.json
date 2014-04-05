@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "express": "3.5.0",
-    "ejs": "~0.8.5",
     "envify": "~1.2.1",
     "react": "~0.9.0",
     "browserify": "~3.32.0",
@@ -25,7 +24,8 @@
     "reactify": "~0.10.0",
     "node-sass": "~0.8.3",
     "autoprefixer": "^1.1.20140403",
-    "underscore": "^1.6.0"
+    "underscore": "^1.6.0",
+    "pejs": "^0.6.5"
   },
   "devDependencies": {
     "watchify": "~0.6.1",
