@@ -16,10 +16,10 @@
     "watch": "nodemon bin/watch.js"
   },
   "dependencies": {
-    "express": "3.5.0",
+    "express": "3.5.1",
     "envify": "~1.2.1",
-    "react": "~0.9.0",
-    "browserify": "~3.32.0",
+    "react": "^0.10.0",
+    "browserify": "~3.38.0",
     "uglify-js": "~2.4.12",
     "reactify": "~0.10.0",
     "node-sass": "~0.8.3",
