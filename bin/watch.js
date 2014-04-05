@@ -3,6 +3,7 @@
 
 var exec = require('child_process').exec;
 var miniwatch = require('miniwatch');
+var _ = require('underscore');
 
 // build info
 require('./build-info.js');
@@ -14,11 +15,12 @@ js.stdout.pipe(process.stdout);
 
 // css
 // don't use node-sass --watch - it kills the process on syntax errors
-miniwatch('browser/css', function(err, files){
-	var css = exec('node-sass --source-map --output public/build/bundle.css browser/css/style.scss');
+// for some reason miniwatch double fires, so debounce the calls
+miniwatch('browser/css', _.debounce(function(err, files){
+	var css = exec('npm run build-css');
 	css.stderr.pipe(process.stderr);
 	css.stdout.pipe(process.stdout);
-});
+}, 500));
 
 // start app
 require('../app.js');
