@@ -22,7 +22,7 @@
     "react": "^0.10.0",
     "browserify": "~3.38.0",
     "uglify-js": "~2.4.12",
-    "reactify": "~0.10.0",
+    "reactify": "~0.11.0",
     "node-sass": "~0.8.3",
     "autoprefixer": "^1.1.20140403",
     "underscore": "^1.6.0",
