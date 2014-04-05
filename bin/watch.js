@@ -5,24 +5,28 @@ var exec = require('child_process').exec;
 var miniwatch = require('miniwatch');
 var _ = require('underscore');
 
+// allow restart of nodemon by typing `rs\n`
+process.stdin.resume();
+
 // build info
-require('./build-info.js');
+fork('nodemon --quiet ./bin/build-info.js');
 
 // js
-var js = exec('npm run watch-js');
-js.stderr.pipe(process.stderr);
-js.stdout.pipe(process.stdout);
+fork('npm run watch-js');
 
 // css
 // don't use node-sass --watch - it kills the process on syntax errors
 // for some reason miniwatch double fires, so debounce the calls
 miniwatch('browser/css', _.debounce(function(err, files){
-	var css = exec('npm run build-css');
-	css.stderr.pipe(process.stderr);
-	css.stdout.pipe(process.stdout);
+	fork('npm run build-css');
 }, 500));
 
 // start app
-var app = exec('nodemon ./app.js');
-app.stderr.pipe(process.stderr);
-app.stdout.pipe(process.stdout);
+fork('nodemon ./app.js');
+
+function fork(script) {
+	var proc = exec(script);
+	proc.stderr.pipe(process.stderr);
+	proc.stdout.pipe(process.stdout);
+	process.stdin.pipe(proc.stdin);
+}

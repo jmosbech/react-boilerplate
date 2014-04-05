@@ -7,9 +7,10 @@
   "scripts": {
     "start": "node app.js",
     "test": "mocha",
+    "build": "npm run build-js && npm run build-css && npm run build-info",
     "postinstall": "npm run build",
+    "build-info": "node ./bin/build-info.js",
     "build-js": "browserify -t reactify -t envify browser/js/app.jsx | uglifyjs --mangle --compress > public/build/bundle.js",
-    "build": "npm run build-js && npm run build-css && node ./bin/build-info.js",
     "watch-js": "watchify -t reactify browser/js/app.jsx --outfile public/build/bundle.js --debug",
     "prefix-css": "autoprefixer -b \"Explorer 9, last 1 version\" public/build/bundle.css",
     "build-css": "node-sass --source-map --output-style compressed --output public/build/bundle.css browser/css/style.scss && npm run prefix-css",

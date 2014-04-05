@@ -12,4 +12,6 @@ exec('git describe 2> /dev/null || git rev-parse HEAD', function (err, stdout) {
 	};
 
 	fs.writeFileSync(path.join(__dirname, '../public/build', 'build-info.json'), JSON.stringify(info));
+
+	console.log('Rebuilt build-info.json');
 });
