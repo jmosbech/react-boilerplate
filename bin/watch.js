@@ -23,4 +23,6 @@ miniwatch('browser/css', _.debounce(function(err, files){
 }, 500));
 
 // start app
-require('../app.js');
+var app = exec('nodemon ./app.js');
+app.stderr.pipe(process.stderr);
+app.stdout.pipe(process.stdout);

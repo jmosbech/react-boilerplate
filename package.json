@@ -13,7 +13,7 @@
     "watch-js": "watchify -t reactify browser/js/app.jsx --outfile public/build/bundle.js --debug",
     "prefix-css": "autoprefixer -b \"Explorer 9, last 1 version\" public/build/bundle.css",
     "build-css": "node-sass --source-map --output-style compressed --output public/build/bundle.css browser/css/style.scss && npm run prefix-css",
-    "watch": "nodemon bin/watch.js"
+    "watch": "node bin/watch.js"
   },
   "dependencies": {
     "express": "3.5.1",
