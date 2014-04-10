@@ -17,7 +17,11 @@
     "watch": "node bin/watch.js"
   },
   "dependencies": {
-    "express": "3.5.1",
+    "express": "~4.0.0",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.1",
+    "errorhandler": "~1.0.0",
+
     "envify": "~1.2.1",
     "react": "^0.10.0",
     "browserify": "~3.38.0",
