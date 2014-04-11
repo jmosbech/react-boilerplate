@@ -3,3 +3,8 @@ body {
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	display: flex;
 }
+
+.items span:first-child {
+	display: inline-block;
+	width: 100px;
+}
