@@ -29,7 +29,8 @@
     "node-sass": "~0.8.3",
     "autoprefixer": "^1.1",
     "underscore": "^1.6.0",
-    "pejs": "^0.6.5"
+    "pejs": "^0.6.5",
+    "cors": "^2.2.0"
   },
   "devDependencies": {
     "watchify": "~0.6.1",

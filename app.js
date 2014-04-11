@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 var errorhandler = require('errorhandler');
 var http = require('http');
 var path = require('path');
+var cors = require('cors');
+var data = require('./data.json');
 
 var app = express();
 
@@ -18,11 +20,23 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pejs');
 app.disable('x-powered-by');
+app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.get('/', routes.index);
+
+app.get('/data/:query?', function(req, res, next){
+	if (!req.params.query) {
+		return res.json(data);
+	}
+	var out = data.filter(function(obj){
+		var searchBase = obj.name.toLowerCase() + obj.id.toLowerCase();
+		return searchBase.indexOf(req.params.query.toLowerCase()) >= 0;
+	});
+	res.json(out);
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 

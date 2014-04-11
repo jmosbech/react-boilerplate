@@ -1,0 +1,598 @@
+[ { "name": "vat account"
+  , "id": "10"
+  }
+, { "name": "FIXED ASSETS"
+  , "id": "1000"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Freehold property"
+  , "id": "1010"
+  }
+, { "name": "Leasehold property"
+  , "id": "1011"
+  }
+, { "name": "Plant and machinery"
+  , "id": "1020"
+  }
+, { "name": "Plant/machinery depreciation"
+  , "id": "1021"
+  }
+, { "name": "Plant/machinery depreciation"
+  , "id": "1022"
+  }
+, { "name": "Office equipment"
+  , "id": "1030"
+  }
+, { "name": "Office equipment depreciation"
+  , "id": "1031"
+  }
+, { "name": "Furniture and fixtures"
+  , "id": "1040"
+  }
+, { "name": "Furniture/fixture depreciation"
+  , "id": "1041"
+  }
+, { "name": "Motor vehicles"
+  , "id": "1050"
+  }
+, { "name": "Motor vehicles depreciation"
+  , "id": "1051"
+  }
+, { "name": "CURRENT ASSETS"
+  , "id": "1090"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Stock"
+  , "id": "1091"
+  }
+, { "name": "Work in progress"
+  , "id": "1092"
+  }
+, { "name": "Finished goods"
+  , "id": "1093"
+  }
+, { "name": "Debtors"
+  , "id": "1100"
+  }
+, { "name": "Other receivables"
+  , "id": "1101"
+  }
+, { "name": "Prepayments"
+  , "id": "1102"
+  }
+, { "name": "Liquid Assets"
+  , "id": "1199"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Bank current account"
+  , "id": "1200"
+  }
+, { "name": "Bank deposit account"
+  , "id": "1210"
+  }
+, { "name": "Building society account"
+  , "id": "1220"
+  }
+, { "name": "Petty cash"
+  , "id": "1230"
+  }
+, { "name": "Test"
+  , "id": "12345"
+  }
+, { "name": "test test test test test test test tes"
+  , "id": "1235"
+  }
+, { "name": "Credit card receipts"
+  , "id": "1240"
+  }
+, { "name": "TestAccount"
+  , "id": "1337"
+  }
+, { "name": "EQUITY & LIABILITIES"
+  , "id": "2098"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Current Liabilities"
+  , "id": "2099"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Creditors control account"
+  , "id": "2100"
+  }
+, { "name": "Sundry creditors"
+  , "id": "2101"
+  }
+, { "name": "Company credit card"
+  , "id": "2102"
+  }
+, { "name": "Reimbursable expenses"
+  , "id": "2103"
+  }
+, { "name": "Accruals"
+  , "id": "2109"
+  }
+, { "name": "VAT & Duties"
+  , "id": "2199"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "VAT liability b/fwd"
+  , "id": "2200"
+  }
+, { "name": "Output VAT (Sales)"
+  , "id": "2201"
+  }
+, { "name": "Input VAT (Purchases)"
+  , "id": "2202"
+  }
+, { "name": "EC Purchases VAT"
+  , "id": "2203"
+  }
+, { "name": "VAT paid"
+  , "id": "2204"
+  }
+, { "name": "VAT refunds"
+  , "id": "2205"
+  }
+, { "name": "VAT adjustments"
+  , "id": "2206"
+  }
+, { "name": "P.A.Y.E."
+  , "id": "2210"
+  }
+, { "name": "National Insurance"
+  , "id": "2211"
+  }
+, { "name": "Net wages"
+  , "id": "2220"
+  }
+, { "name": "Pension fund"
+  , "id": "2230"
+  }
+, { "name": "Longterm Liabilities"
+  , "id": "2299"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Loans"
+  , "id": "2300"
+  }
+, { "name": "Hire purchase"
+  , "id": "2310"
+  }
+, { "name": "Corporation tax"
+  , "id": "2320"
+  }
+, { "name": "Mortgages"
+  , "id": "2330"
+  }
+, { "name": "Capital & Reserves"
+  , "id": "2999"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Ordinary shares"
+  , "id": "3000"
+  }
+, { "name": "Preference shares"
+  , "id": "3010"
+  }
+, { "name": "Reserves"
+  , "id": "3100"
+  }
+, { "name": "Undistributed reserves"
+  , "id": "3101"
+  }
+, { "name": "Profit or loss brought fwd"
+  , "id": "3200"
+  }
+, { "name": "test test test test test test test test test test test test test test"
+  , "id": "3252"
+  }
+, { "name": "PROFIT & LOSS ACCOUNTS"
+  , "id": "3997"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "PROFIT & LOSS ACCOUNTS"
+  , "id": "3998"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Turnover"
+  , "id": "3999"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Sales - Std rate VAT"
+  , "id": "4000"
+  }
+, { "name": "Sales - Zero rate VAT"
+  , "id": "4001"
+  }
+, { "name": "Sales - Reduced rate VAT"
+  , "id": "4002"
+  }
+, { "name": "EU Sales - services"
+  , "id": "4009"
+  }
+, { "name": "EU Sales - goods & related services"
+  , "id": "4010"
+  }
+, { "name": "Overseas Sales"
+  , "id": "4099"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Export sales - Type A"
+  , "id": "4100"
+  }
+, { "name": "Export sales - Type B"
+  , "id": "4101"
+  }
+, { "name": "Sales of Assets"
+  , "id": "4200"
+  }
+, { "name": "Credit charges (late payments)"
+  , "id": "4400"
+  }
+, { "name": "Other sales"
+  , "id": "4900"
+  }
+, { "name": "Royalties received"
+  , "id": "4901"
+  }
+, { "name": "Commissions received"
+  , "id": "4902"
+  }
+, { "name": "Insurance claims"
+  , "id": "4903"
+  }
+, { "name": "Rent income"
+  , "id": "4904"
+  }
+, { "name": "Distribution and carriage"
+  , "id": "4905"
+  }
+, { "name": "Bank interest received"
+  , "id": "4906"
+  }
+, { "name": "Purchases"
+  , "id": "4999"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Cost of sales"
+  , "id": "5000"
+  }
+, { "name": "Materials imported"
+  , "id": "5001"
+  }
+, { "name": "Miscellaneous purchases"
+  , "id": "5002"
+  }
+, { "name": "Packaging"
+  , "id": "5003"
+  }
+, { "name": "Discounts taken"
+  , "id": "5009"
+  }
+, { "name": "Carriage"
+  , "id": "5100"
+  }
+, { "name": "Import duty"
+  , "id": "5101"
+  }
+, { "name": "Transport insurance"
+  , "id": "5102"
+  }
+, { "name": "Opening stock"
+  , "id": "5200"
+  }
+, { "name": "Closing stock"
+  , "id": "5201"
+  }
+, { "name": "Direct Costs"
+  , "id": "5999"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Productive labour"
+  , "id": "6000"
+  }
+, { "name": "Sales labour"
+  , "id": "6001"
+  }
+, { "name": "Sub-contractors"
+  , "id": "6002"
+  }
+, { "name": "Sales commissions"
+  , "id": "6100"
+  }
+, { "name": "Sales promotions"
+  , "id": "6200"
+  }
+, { "name": "Advertising"
+  , "id": "6201"
+  }
+, { "name": "Gifts and samples"
+  , "id": "6202"
+  }
+, { "name": "PR (literature & brochures)"
+  , "id": "6203"
+  }
+, { "name": "Clothing costs"
+  , "id": "6204"
+  }
+, { "name": "Overheads"
+  , "id": "6999"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Gross wages (staff)"
+  , "id": "7000"
+  }
+, { "name": "Directors salaries"
+  , "id": "7001"
+  }
+, { "name": "Directors remuneration"
+  , "id": "7002"
+  }
+, { "name": "Employers N.I."
+  , "id": "7006"
+  }
+, { "name": "Employers pensions"
+  , "id": "7007"
+  }
+, { "name": "Recruitment expenses"
+  , "id": "7008"
+  }
+, { "name": "Healthcover & life insurance"
+  , "id": "7009"
+  }
+, { "name": "SSP reclaimed"
+  , "id": "7010"
+  }
+, { "name": "SMP reclaimed"
+  , "id": "7011"
+  }
+, { "name": "Premises"
+  , "id": "7099"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Rent"
+  , "id": "7100"
+  }
+, { "name": "Water rates"
+  , "id": "7102"
+  }
+, { "name": "General rates"
+  , "id": "7103"
+  }
+, { "name": "Premises & liability insurance"
+  , "id": "7104"
+  }
+, { "name": "Utilities"
+  , "id": "7199"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Electricity"
+  , "id": "7200"
+  }
+, { "name": "Gas"
+  , "id": "7201"
+  }
+, { "name": "Oil"
+  , "id": "7202"
+  }
+, { "name": "Other heating costs"
+  , "id": "7203"
+  }
+, { "name": "Vehicles - running costs"
+  , "id": "7299"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Car fuel & oil"
+  , "id": "7300"
+  }
+, { "name": "Repairs and servicing"
+  , "id": "7301"
+  }
+, { "name": "Licences & MOT's"
+  , "id": "7302"
+  }
+, { "name": "Vehicle insurance"
+  , "id": "7303"
+  }
+, { "name": "Miscellaneous motor expenses"
+  , "id": "7304"
+  }
+, { "name": "Scale charges"
+  , "id": "7350"
+  }
+, { "name": "Travel & Entertainment"
+  , "id": "7399"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Travelling"
+  , "id": "7400"
+  }
+, { "name": "Car hire"
+  , "id": "7401"
+  }
+, { "name": "Hotels"
+  , "id": "7402"
+  }
+, { "name": "UK entertainment"
+  , "id": "7403"
+  }
+, { "name": "Overseas travelling"
+  , "id": "7405"
+  }
+, { "name": "Subsistence & refreshments"
+  , "id": "7406"
+  }
+, { "name": "Travel insurance"
+  , "id": "7407"
+  }
+, { "name": "Administrative Expenses"
+  , "id": "7499"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Printing"
+  , "id": "7500"
+  }
+, { "name": "Postage "
+  , "id": "7501"
+  }
+, { "name": "Telephone"
+  , "id": "7502"
+  }
+, { "name": "Internet"
+  , "id": "7503"
+  }
+, { "name": "Office stationery"
+  , "id": "7504"
+  }
+, { "name": "Books & subscriptions"
+  , "id": "7505"
+  }
+, { "name": "Training costs"
+  , "id": "7506"
+  }
+, { "name": "Donations"
+  , "id": "7507"
+  }
+, { "name": "Computer software & sundry IT"
+  , "id": "7508"
+  }
+, { "name": "Professional fees"
+  , "id": "7599"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Legal fees"
+  , "id": "7600"
+  }
+, { "name": "Audit and accountancy Fees"
+  , "id": "7601"
+  }
+, { "name": "Consultancy fees"
+  , "id": "7602"
+  }
+, { "name": "Professional fees"
+  , "id": "7603"
+  }
+, { "name": "Memberships"
+  , "id": "7604"
+  }
+, { "name": "Equipment Costs"
+  , "id": "7699"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Equipment hire"
+  , "id": "7700"
+  }
+, { "name": "Office machine maintenance"
+  , "id": "7701"
+  }
+, { "name": "Maintenance"
+  , "id": "7799"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Repairs and renewals"
+  , "id": "7800"
+  }
+, { "name": "Cleaning"
+  , "id": "7801"
+  }
+, { "name": "Laundry"
+  , "id": "7802"
+  }
+, { "name": "Finance Charges"
+  , "id": "7899"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Bank interest paid"
+  , "id": "7900"
+  }
+, { "name": "Bank charges"
+  , "id": "7901"
+  }
+, { "name": "Currency charges"
+  , "id": "7902"
+  }
+, { "name": "Loan interest paid"
+  , "id": "7903"
+  }
+, { "name": "H.P. interest"
+  , "id": "7904"
+  }
+, { "name": "Credit charges"
+  , "id": "7905"
+  }
+, { "name": "Exchange rate variance"
+  , "id": "7906"
+  }
+, { "name": "Depreciation"
+  , "id": "8000"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Plant/machinery depreciation"
+  , "id": "8021"
+  }
+, { "name": "Office equipment depreciation"
+  , "id": "8031"
+  }
+, { "name": "Furniture/fixture depreciation"
+  , "id": "8041"
+  }
+, { "name": "Vehicle depreciation"
+  , "id": "8051"
+  }
+, { "name": "Bad Debts"
+  , "id": "8099"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Bad debt write off"
+  , "id": "8100"
+  }
+, { "name": "Bad debt provision"
+  , "id": "8102"
+  }
+, { "name": "Disposals"
+  , "id": "8300"
+  , "header": "true"
+  , "hide": "true"
+  }
+, { "name": "Plant/machinery disposals"
+  , "id": "8320"
+  }
+, { "name": "Office equipment disposals"
+  , "id": "8330"
+  }
+, { "name": "Furniture/fixture disposals"
+  , "id": "8340"
+  }
+, { "name": "Vehicle disposals"
+  , "id": "8350"
+  }
+, { "name": "Mispostings account"
+  , "id": "9999"
+  }
+]
