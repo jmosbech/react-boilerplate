@@ -40,5 +40,15 @@ To automatically rebuild CSS and JavaScript bundles while developing, start the 
 npm run watch
 ```
 
+## Structure
+The repo is organized like this:
+- `app.js`: Main file. Starts the server.
+- `/bin`: Various build scripts.
+- `/browser`: All browser code: Sass and JSX files.
+- `/public`: Publicly available static assets: build output and images.
+- `/routes`: Express route definitions.
+- `/test`: Mocha specs.
+- `/views`: Server side views. Written with [PEJS](https://github.com/gett/pejs).
+
 ## License
 MIT
