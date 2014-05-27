@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "author": "Jonas Mosbech <jonas@mosbech.net>",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -17,25 +17,25 @@
     "watch": "node bin/watch.js"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "morgan": "~1.0.0",
-    "body-parser": "~1.0.1",
+    "express": "~4.3.1",
+    "morgan": "~1.1.1",
+    "body-parser": "~1.2.2",
     "errorhandler": "~1.0.0",
     "envify": "~1.2.1",
     "react": "^0.10.0",
-    "browserify": "~3.40.0",
+    "browserify": "~4.1.5",
     "uglify-js": "~2.4.12",
-    "reactify": "~0.11.0",
+    "reactify": "~0.13.1",
     "node-sass": "~0.8.3",
     "autoprefixer": "^1.1",
     "underscore": "^1.6.0",
     "pejs": "^0.6.5"
   },
   "devDependencies": {
-    "watchify": "~0.6.1",
+    "watchify": "~0.10.1",
     "nodemon": "~1.0.15",
     "miniwatch": "~0.1.1",
-    "mocha": "~1.18.0",
+    "mocha": "~1.19.0",
     "mocha-jshint": "0.0.7"
   }
 }
